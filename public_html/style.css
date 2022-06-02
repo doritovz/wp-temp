@@ -1,0 +1,89 @@
+:root {
+    --backgroundimg: url(files/nerd-emoji.png);
+    --subtitlecolor: rgba(106, 106, 106, .45);
+    --copiedtextcolor: rgb(89, 43, 255);
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    font-family: monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--backgroundimg);
+    background-repeat: no-repeat;
+    background-size: 15rem;
+    background-position: top;
+    background-position-y: 125%;
+    transition: all .3s ease;
+  }
+  .x-main {
+    flex: 1 0 auto;
+  }
+  .x-footer {
+    background: none;
+    flex-shrink: 0;
+  }
+  .x-subtitle_container {
+    background: none;
+    width: 100%;
+  }
+  .x-subtitle {
+    color: var(--subtitlecolor);
+  }
+  .x-copied {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: .75em;
+    background-color: var(--copiedtextcolor);
+    display: block;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    min-width: 12vh;
+    max-width: 18vh;
+    padding: .5vh;
+    border: none;
+    border-radius: 1rem;
+  }
+  a {
+    color: var(--subtitlecolor);
+    text-decoration: none;
+  }
+  hr {
+    width: 35%;
+    background: #000;
+    border: .125em solid #000;
+    border-radius: .125em;
+  }
+  body:hover {
+    background-size: 30rem;
+    background-position-y: 5%;
+  }
+  .x-desc {
+      font-size: 1.125em;
+  }
+  .x-videoholder {
+    margin-right: 2.5vh;
+    padding: 1.5vh;
+    background-color: #f3f3f3;
+    height: fit-content;
+    width: fit-content;
+    border-radius: .5rem;
+    box-shadow: 0 0 16px 8px rgba(106, 106, 106, .45);
+    opacity: .35;
+    transition: opacity .35s ease;
+  }
+  .x-videoholder:hover {
+    opacity: 1;
+  }
+  .x-video {
+    border-radius: .5rem;
+  }
+  .x-message {
+    float: right;
+  }
+  .x-messageattach {
+    text-align: left;
+  }
